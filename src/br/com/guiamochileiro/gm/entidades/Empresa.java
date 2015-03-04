@@ -1,31 +1,16 @@
 package br.com.guiamochileiro.gm.entidades;
 
 public class Empresa extends Usuario{
-	public int id;
-	public String usuario;
-	public String nome;
-	public String email;
-	
+	private String nome;
+	private String email;
+		
 	//constructor
-	public Empresa(){
+	public Empresa(String nome, String email, String senha){	
+		super(nome, email, senha);
 	}
+	
 	//getters and setters
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -41,8 +26,6 @@ public class Empresa extends Usuario{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-	
-	
+
+		
 }

@@ -2,12 +2,12 @@ package br.com.guiamochileiro.gm.entidades;
 
 public class Usuario {
 	public int id;
-	public String usuario;
-	public int senha;
+	public String nomeUsuario;
+	public String senha;
 	private int senhaSalva;
 	
 	//constructor
-	public Usuario(){		
+	public Usuario(String nome, String email, String senha){		
 	}
 	//getters and setters
 	public int getId() {
@@ -18,19 +18,19 @@ public class Usuario {
 		this.id = id;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getNomeUsuario() {
+		return nomeUsuario;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setNomeUsuario(String usuario) {
+		this.nomeUsuario = usuario;
 	}
 
-	public int getSenha() {
+	public String getSenha() {
 		return senha;
 	}
 
-	public void setPassword(int senha) {
+	public void setPassword(String senha) {
 		this.senha = senha;
 	}
 	
@@ -42,5 +42,5 @@ public class Usuario {
 		}else
 		return false;
 	}
-
+	
 }

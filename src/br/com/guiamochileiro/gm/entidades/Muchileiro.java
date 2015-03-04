@@ -1,23 +1,18 @@
 package br.com.guiamochileiro.gm.entidades;
 
-public class Muchileiro extends Usuario{
-	public int id;
-	public String nome;
-	public String email;
-	public String usuario;
-	
+import java.io.Serializable;
+
+public class Muchileiro extends Usuario implements Serializable{	
+	private String nome;
+	private String email;
+		
 	//constructor
-	public Muchileiro(){		
+	public Muchileiro(String nome, String email, String senha){	
+		super(nome, email, senha);
 	}
+	
 	//getters and setters
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -34,12 +29,5 @@ public class Muchileiro extends Usuario{
 		this.email = email;
 	}
 
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
 		
 }
